@@ -39,7 +39,10 @@ const MORSE_TABLE = {
 
 function decode(expr) {
     let array_expr = expr.match(/.{10}/g);
-    
+    let array_morse = array_expr.map(function(item){
+        return item.replace(/^0*/g,'')
+    })
+    let result = '';
 
 }
 
